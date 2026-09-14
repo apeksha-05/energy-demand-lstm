@@ -1,0 +1,11 @@
+{
+  "window": 168,
+  "z_threshold": 3.0,
+  "total_points": 7087,
+  "anomalies_flagged": 49,
+  "anomaly_rate_pct": 0.691,
+  "residual_mean": -5.675355021185774,
+  "residual_std": 85.13259439189427,
+  "largest_anomaly_index": 5320,
+  "largest_anomaly_residual": -367.3402810996233
+}

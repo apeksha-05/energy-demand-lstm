@@ -1,0 +1,107 @@
+{
+  "Naive": {
+    "MAE": 165.8332977294922,
+    "RMSE": 213.03768920898438,
+    "MAPE": 13.862836360931396,
+    "sMAPE": 13.6790931224823,
+    "R2": -0.3298739194869995
+  },
+  "Moving Average": {
+    "MAE": 132.92239379882812,
+    "RMSE": 165.12034606933594,
+    "MAPE": 11.152240633964539,
+    "sMAPE": 10.994116961956024,
+    "R2": 0.20108836889266968
+  },
+  "Linear Regression": {
+    "MAE": 92.6028062600483,
+    "RMSE": 117.55615183031193,
+    "MAPE": 7.920299034299069,
+    "sMAPE": 7.806543169949691,
+    "R2": 0.5950621759598956
+  },
+  "Simple RNN": {
+    "MAE": 76.72217469917109,
+    "RMSE": 102.87106096048383,
+    "MAPE": 6.573378843448424,
+    "sMAPE": 6.45643177075811,
+    "R2": 0.6895605504670375,
+    "training_time_seconds": 202.21766090393066,
+    "num_parameters": 7064
+  },
+  "Simple RNN (DEV CONFIG - not directly comparable)": {
+    "MAE": 135.65389715713272,
+    "RMSE": 173.3746706413781,
+    "MAPE": 10.813759312967623,
+    "sMAPE": 11.24436141317339,
+    "R2": 0.11873359324527122,
+    "training_time_seconds": 16.2867488861084,
+    "num_parameters": 7064,
+    "note": "Trained on 4000/33469 samples, lookback=24h (not the project default 72h), 5 epochs, no early stopping. Recorded for reference only due to CPU constraints during development. NOT a fair comparison against baseline/other model rows, which use the full dataset and default lookback."
+  },
+  "LSTM": {
+    "MAE": 67.42262438218985,
+    "RMSE": 93.76762669559268,
+    "MAPE": 5.773967504668753,
+    "sMAPE": 5.65469946598041,
+    "R2": 0.7420732922848885,
+    "training_time_seconds": 15091.578355312347,
+    "num_parameters": 23576
+  },
+  "Univariate LSTM": {
+    "MAE": 79.75889631180218,
+    "RMSE": 106.02803623522703,
+    "MAPE": 6.864089441490391,
+    "sMAPE": 6.684010120125448,
+    "R2": 0.6702142374431005,
+    "training_time_seconds": 409.83084177970886,
+    "num_parameters": 20248
+  },
+  "Stacked LSTM": {
+    "MAE": 69.65576197774337,
+    "RMSE": 97.95924721817785,
+    "MAPE": 5.974574480290204,
+    "sMAPE": 5.831754046016125,
+    "R2": 0.7184980906425293,
+    "training_time_seconds": 1480.2255992889404,
+    "num_parameters": 56856
+  },
+  "BiLSTM (experiment)": {
+    "MAE": 66.39154251766274,
+    "RMSE": 91.86067688474449,
+    "MAPE": 5.716332377124359,
+    "sMAPE": 5.59847692207808,
+    "R2": 0.7524575133605947,
+    "training_time_seconds": 1109.4285316467285,
+    "num_parameters": 47128,
+    "note": "Controlled experiment only \u2014 NOT used as production model due to real-time deployment constraints (no future data available at inference)."
+  },
+  "Attention-LSTM": {
+    "MAE": 86.76991752000143,
+    "RMSE": 112.72188666727624,
+    "MAPE": 7.3567807792619275,
+    "sMAPE": 7.257780439875641,
+    "R2": 0.6272591725350285,
+    "training_time_seconds": 1334.6884427070618,
+    "num_parameters": 27800,
+    "note": "Underperformed plain LSTM in our 10-epoch-capped experiments; loss curve suggests under-convergence rather than a fundamental architectural weakness. Not further tuned due to compute constraints."
+  },
+  "GRU": {
+    "MAE": 71.90509986000302,
+    "RMSE": 97.20509569978887,
+    "MAPE": 6.156141076055723,
+    "sMAPE": 6.052414933450456,
+    "R2": 0.7228157616784869,
+    "training_time_seconds": 675.6257827281952,
+    "num_parameters": 18072
+  },
+  "Transformer": {
+    "MAE": 73.77266826742938,
+    "RMSE": 103.44833472481274,
+    "MAPE": 6.35630448519236,
+    "sMAPE": 6.1368359016345435,
+    "R2": 0.6860666353952469,
+    "training_time_seconds": 1358.5219097137451,
+    "num_parameters": 36376
+  }
+}

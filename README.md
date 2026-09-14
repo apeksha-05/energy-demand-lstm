@@ -1,5 +1,7 @@
 # Multivariate Energy Demand Forecasting and Anomaly Detection Using LSTM
 
+**[Live Demo](https://apeksha-05-energy-demand-lstm-appapp-nysqym.streamlit.app)**
+
 A complete, end-to-end deep learning system for forecasting Panama's national electricity demand and detecting anomalous consumption patterns -- built as a comparative study across 8 neural sequence architectures (RNN, LSTM, Stacked LSTM, BiLSTM, GRU, Attention-LSTM, Transformer) plus classical baselines.
 
 ---

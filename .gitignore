@@ -8,16 +8,12 @@ __pycache__/
 
 # Data (raw/interim/processed data can be large or user-specific;
 # keep folder structure via .gitkeep, exclude actual data files)
-data/raw/*
 data/interim/*
 data/processed/*
-!data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/processed/.gitkeep
 
-# Trained model artifacts (can be large; document how to regenerate instead)
-models/*
-!models/.gitkeep
+# data/raw and models are intentionally committed for public dashboard deployment
 
 # Experiment outputs are mostly small JSON/CSV and ARE worth committing
 # for portfolio/grading purposes — do NOT exclude experiments/
